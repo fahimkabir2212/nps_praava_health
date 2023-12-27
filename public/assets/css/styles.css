@@ -27,6 +27,7 @@
 
 .form-title {
     font-size: 2rem;
+    color: var(--purple);
 }
 
 .form-description {
@@ -41,3 +42,4 @@
 .initial-form input:focus {
     outline: 1px solid var(--purple);
 }
+/*END OF LANDING PAGE */
