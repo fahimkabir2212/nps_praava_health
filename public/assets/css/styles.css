@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .prava-logo {
@@ -91,7 +91,7 @@
     padding: 2rem;
     border-radius: 0.8rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
@@ -140,4 +140,9 @@
 .select label{
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+/* TEST */
+.test-block{
+    width: 100%;
 }
