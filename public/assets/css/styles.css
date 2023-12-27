@@ -43,3 +43,101 @@
     outline: 1px solid var(--purple);
 }
 /*END OF LANDING PAGE */
+
+/* MAIN FORM */
+.form-steps {
+    background-color: var(--purple);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.step a {
+    text-decoration: none;
+}
+.step a h3 {
+    font-size: 2rem;
+    color: var(--purple);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    background-color: var(--white-grey);
+}
+
+.step p {
+    color: var(--white);
+}
+
+/* ACTIVE STEP */
+.active-step {
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    background-color: var(--white) !important;
+}
+
+/* FORM */
+.review-form {
+    background-color: #ffffff6f;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating-item {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.rating-item input {
+    display: none;
+}
+
+.rating-item label {
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: var(--white-grey);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: var(--purple);
+    font-weight: 500;
+}
+
+.rating-item input:checked + label {
+    color: #ddd;
+    background-color: var(--purple);
+}
+
+.question{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Multiselect */
+.main-response-reason{
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.select label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}

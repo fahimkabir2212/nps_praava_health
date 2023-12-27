@@ -12,8 +12,9 @@
                         complete a short survey on your experience today.</p>
                 </div>
                 <form class="initial-form" action="">
+                    @csrf
                     <input type="number" placeholder="search Phone number / UPI ">
-                    <a class="btn btn-primary">Start</a>
+                    <a href="{{route('main.form.slide1')}}" class="btn btn-primary">Start</a>
                 </form>
 
             </div>

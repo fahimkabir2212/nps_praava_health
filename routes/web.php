@@ -15,7 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.LandingPage');
-});
-Route::get('/test', function () {
-    return view('welcome');
-});
+})->name('landing.page');
+
+Route::get('/feedback-form-overall-review', function () {
+    return view('pages.NpsFormScreen1');
+})->name('main.form.slide1');
+
+Route::get('/feedback-form', function () {
+    return view('pages.NpsFormScreen2');
+})->name('main.form.slide2');
+

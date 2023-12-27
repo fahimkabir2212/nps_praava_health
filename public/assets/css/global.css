@@ -4,7 +4,8 @@
     --purple-light: #8a206133;
     --purple-hover: #74134e;
     --white: #ebebeb;
-    --grey: #5F5F5F;
+    --white-grey: #c8c8c8;
+    --grey: #939393;
     --yellow:#FFA800;
     --green:#008000b9;
     --green-hover:#008000cf;
@@ -64,6 +65,7 @@ p{
     font-size: 1rem;
     font-weight: 600;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 /* Primary button -Purple */
@@ -76,16 +78,27 @@ p{
     background-color: var(--purple-hover) ;
 }
 /* Secondary Button - Green */
+.btn-orange{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: rgb(222, 65, 4);
+    transition: all 5ms ease-in-out;
+}
+.btn-orange:hover{
+    cursor: pointer;
+    background-color:rgb(202, 58, 2);
+}
 .btn-green{
     text-decoration: none;
-    font-size: 0.8rem;
-    color: var(--black);
-    background-color: var(--green);
+    font-size: 1rem;
+    color: var(--white);
+    background-color: rgb(4, 159, 37);
     transition: all 5ms ease-in-out;
 }
 .btn-green:hover{
     cursor: pointer;
-    background-color: var(--green-hover);
+    background-color:rgb(1, 139, 31);
 }
 
 .section{
