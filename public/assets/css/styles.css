@@ -1,0 +1,43 @@
+.section-landing-page {
+    height: 100vh;
+}
+
+/* LANDING PAGE */
+.content {
+    background: linear-gradient(0deg, #000000b3, #000000b3),
+        url(../images/praava-front.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.prava-logo {
+    max-width: 14rem;
+}
+
+.form-title {
+    font-size: 2rem;
+}
+
+.form-description {
+    font-size: 1rem;
+}
+
+.initial-form input {
+    padding: 0.6rem 1rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+.initial-form input:focus {
+    outline: 1px solid var(--purple);
+}
