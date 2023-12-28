@@ -50,7 +50,7 @@
 /* FORM */
 .review-form {
     background-color: #ffffff6f;
-    padding: 2rem;
+    padding: 2rem 1.2rem;
     border-radius: 0.8rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -100,7 +100,7 @@
 }
 
 .select label{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 

@@ -11,11 +11,11 @@
                 ])
                 @include('components.checkboxCard',[
                     'question'=>"Interaction with Praava's social media pages",
-                    'options'=>['Providing correct information',"Maintained a professional tone in responses",'Responded in a timely manner'],
+                    'options'=>['Providing correct information',"Maintained a professional tone",'Responded in a timely manner'],
                 ])
                 @include('components.checkboxCard',[
                     'question'=>'Doctor/Healthcare provider',
-                    'options'=>["Doctor/Healthcare provider's knowledge","Doctor/Healthcare provider's empathy & care",'If the doctor/healthcare provider was on time',"Consultation time/duration","Attitude & professionalism "],
+                    'options'=>["Doctor/Healthcare provider's knowledge","Empathy & care",'Doctor/healthcare provider was on time',"Consultation time","Attitude & professionalism "],
                 ])
                 <div class="flex">
                     <a href="{{ route('main.form.slide1') }}" class="btn btn-orange">Prev</a>
