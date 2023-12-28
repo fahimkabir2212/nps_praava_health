@@ -28,3 +28,9 @@
     display: flex;
     gap: 1rem;
 }
+
+.sticky {
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+  }

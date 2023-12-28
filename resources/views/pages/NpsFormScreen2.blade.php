@@ -2,7 +2,7 @@
 @section('content')
     <section class="section-main-form">
         <div class="grid grid-col-4x-8x">
-            <div class="vh-100 form-steps">
+            <div class="vh-100 form-steps sticky">
                 <div class="steps">
                     <div class="step">
                         <a href="{{ route('main.form.slide1') }}">
@@ -69,7 +69,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="test-block" style="display: none">
+                <div id="item-1" class="w-100" style="display: none">
+                    @include('components.reviewScale')
+                </div>
+                <div id="item-2" class="w-100" style="display: none">
+                    @include('components.reviewScale')
+                </div>
+                <div id="item-3" class="w-100" style="display: none">
+                    @include('components.reviewScale')
+                </div>
+                <div id="item-4" class="w-100" style="display: none">
+                    @include('components.reviewScale')
+                </div>
+                <div id="item-5" class="w-100" style="display: none">
+                    @include('components.reviewScale')
+                </div>
+                <div id="item-6" class="w-100" style="display: none">
+                    @include('components.reviewScale')
+                </div>
+                <div id="item-7" class="w-100" style="display: none">
                     @include('components.reviewScale')
                 </div>
                 <div class="flex">

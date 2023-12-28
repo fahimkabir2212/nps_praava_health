@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Listen for checkbox changes
-    var item1Checkbox = document.getElementById('item_1');
-    item1Checkbox.addEventListener('change', function() {
-        updateTestBlockVisibility(item1Checkbox);
-    });
+    for (let i = 1; i <= 7; i++) {
+        let checkbox = document.getElementById('item_' + i);
+        checkbox.addEventListener('change', function() {
+            updateBlockVisibility(checkbox, 'item-' + i);
+        });
+    }
 
-    // Function to update the visibility of the test-block
-    function updateTestBlockVisibility(checkbox) {
-        var testBlock = document.querySelector('.test-block');
-
-        // Show or hide the test-block based on whether item 1 is checked
-        testBlock.style.display = checkbox.checked ? 'block' : 'none';
+    // Function to update the visibility of a block based on the checkbox state
+    function updateBlockVisibility(checkbox, blockId) {
+        let item = document.getElementById(blockId);
+        // Show or hide the block based on whether the checkbox is checked
+        item.style.display = checkbox.checked ? 'block' : 'none';
     }
 });
