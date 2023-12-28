@@ -1,6 +1,6 @@
 <div class="review-form">
-    <p class="question mb-2x">From 1 to 10, how likely are you to recommend Praava Health to friends or
-        family? </p>
+    
+    <p class="question mb-2x">{{$question}}</p>
     <div class="rating-container">
         <div class="rating-item">
             <input type="radio" id="rating1" name="rating" value="1">

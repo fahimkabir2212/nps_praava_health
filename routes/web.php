@@ -25,3 +25,10 @@ Route::get('/feedback-form', function () {
     return view('pages.NpsFormScreen2');
 })->name('main.form.slide2');
 
+Route::get('/feedback-form2', function () {
+    return view('pages.NpsFormScreen3');
+})->name('main.form.slide3');
+Route::get('/feedback-form3', function () {
+    return view('pages.NpsFormScreen4');
+})->name('main.form.slide4');
+

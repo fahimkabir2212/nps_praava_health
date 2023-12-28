@@ -1,26 +1,23 @@
-@extends('layout.layout')
-@section('content')
-    <section class="section-main-form">
-        <div class="grid grid-col-4x-8x">
-            @include('components.sidebar')
-            <div class="form-container">
-                @include('components.reviewScale',[
-                    'question'=> 'From 1 to 10, how likely are you to recommend Praava Health to friends or family?',
-                ])
+<div class="review-form">
+    <p class="question mb-2x">{{ $question }}</p>
+    <div class="main-response-reason">
 
-                @include('components.checkboxCard',[
-                    'question'=>'What are the main reasons for your response? Select all that apply.',
-                    'options'=>['Price','Quality of care','Location','Wait time','Availability of services and specialties','Availability of medications in the pharmacy','Ghorelab & Home services'],
-                ])
-                {{-- <div class="review-form">
-                    <p class="question mb-2x">What are the main reasons for your response? Select all that apply.</p>
-                    <div class="main-response-reason">
+        @foreach ($options as $index => $option)
+            <div class="select">
+                <input type="checkbox" id="item_{{ $index + 1 }}">
+                <label class="btn btn-warning button_select" for="item_{{ $index + 1 }}">{{ $option }}</label>
+            </div>
+        @endforeach
+
+        {{-- @foreach ($options as $option)
+                            
                         <div class="select">
                             <input type="checkbox" id="item_1">
-                            <label class="btn btn-warning button_select" for="item_1">Price</label>
+                            <label class="btn btn-warning button_select" for="item_1">{{$option}}</label>
                         </div>
-                        
-                        <div class="select">
+                        @endforeach --}}
+
+        {{-- <div class="select">
                             <input type="checkbox" id="item_2">
                             <label class="btn btn-warning button_select" for="item_2">Location</label>
                         </div>
@@ -45,14 +42,6 @@
                         <div class="select">
                             <input type="checkbox" id="item_7">
                             <label class="btn btn-warning button_select" for="item_7">Ghorelab & Home services</label>
-                        </div>
-                    </div>
-                </div> --}}
-                <div class="flex">
-                    <a href="{{route('landing.page')}}" class="btn btn-orange">Prev</a>
-                <a href="{{route('main.form.slide2')}}" class="btn btn-green">Next</a>
-                </div>
-            </div>
-        </div>
-    </section>
-@endsection
+                        </div> --}}
+    </div>
+</div>

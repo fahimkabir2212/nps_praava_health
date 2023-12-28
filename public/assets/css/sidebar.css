@@ -1,0 +1,47 @@
+.form-steps {
+    background-color: var(--purple);
+}
+
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    height: 100%;
+    gap: 3rem;
+    margin: 0 0 0 25% ;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* margin: 0 auto; */
+}
+.step a {
+    text-decoration: none;
+}
+.step a h3 {
+    font-size: 2rem;
+    color: var(--purple);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    background-color: var(--white-grey);
+}
+
+.step-description{
+    color: #bfbfbf;
+}
+
+/* ACTIVE STEP */
+.active-step {
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    background-color: var(--white) !important;
+}
+
+.color-wh{
+    color: var(--white) !important;
+}
