@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('pages.LandingPage');
 })->name('landing.page');
 
+Route::get('select-patient', function () {
+    return view('pages.MultipleUpiPage');
+})->name('patient.select.page');
+
 Route::get('/feedback-form-overall-review', function () {
     return view('pages.NpsFormScreen1');
 })->name('main.form.slide1');

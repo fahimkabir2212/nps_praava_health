@@ -34,14 +34,32 @@
     font-size: 1rem;
 }
 
+.initial-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.initial-form-input-field {
+    text-align: left;
+}
+.initial-form-input-field p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--purple);
+}
+
 .initial-form input {
     padding: 0.6rem 1rem;
     width: 20rem;
-    margin-bottom: 1rem;
 }
 .initial-form input:focus {
     outline: 1px solid var(--purple);
 }
+
 /*END OF LANDING PAGE */
 
 /* MAIN FORM */
@@ -146,4 +164,33 @@
     max-width: 100%;
     resize: none;
     border-radius: 6px;
+}
+/* MULTIPLE PATIENT PAGE */
+
+/* UPI CARD */
+.upi-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.upi-cards-container a {
+    text-decoration: none !important;
+}
+.upi-card {
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.upi-card-header {
+    font-size: 1.2rem;
+    color: var(--purple);
+    margin-bottom: 0.3rem;
+}
+
+.upi-card p {
+    color: var(--black);
+    font-size: 0.8rem;
 }
