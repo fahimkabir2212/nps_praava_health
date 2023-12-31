@@ -4,9 +4,17 @@
         <div class="grid grid-col-4x-8x">
             @include('components.sidebar')
             <div class="form-container">
-                @include('components.checkboxCard',[
-                    'question'=>'What are the main reasons for your response? Select all that apply.',
-                    'options'=>['Contact Center',"Praava's social media pages",'Nurse','Reception Team','Blood / Sample Collectors','X-ray, ETT, ECHO, and/or USG (Technician)','Security Team'],
+                @include('components.checkboxCard', [
+                    'question' => 'Who did you interact with at Praava today? Select all that apply.',
+                    'options' => [
+                        'Contact Center',
+                        "Praava's social media pages",
+                        'Nurse',
+                        'Reception Team',
+                        'Blood / Sample Collectors',
+                        'X-ray, ETT, ECHO, and/or USG (Technician)',
+                        'Security Team',
+                    ],
                 ])
                 {{-- <div class="review-form">
                     <p class="question mb-2x">Who did you interact with at Praava today? Select all that apply.</p>
@@ -45,8 +53,9 @@
                         </div>
                     </div>
                 </div> --}}
-                @include('components.reviewScale',[
-                    'question'=> 'From 1 to 10, how likely are you to recommend each provider to friends or family?',
+                @include('components.reviewScale', [
+                    'question' =>
+                        'From 1 to 10, how likely are you to recommend each provider to friends or family?',
                 ])
                 {{-- <div id="item-1" class="w-100" style="display: none">
                     @include('components.reviewScale')

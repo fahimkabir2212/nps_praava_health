@@ -4,13 +4,22 @@
         <div class="grid grid-col-4x-8x">
             @include('components.sidebar')
             <div class="form-container">
-                @include('components.reviewScale',[
-                    'question'=> 'From 1 to 10, how likely are you to recommend Praava Health to friends or family?',
+                @include('components.reviewScale', [
+                    'question' =>
+                        'From 1 to 10, how likely are you to recommend Praava Health to friends or family?',
                 ])
 
-                @include('components.checkboxCard',[
-                    'question'=>'What are the main reasons for your response? Select all that apply.',
-                    'options'=>['Price','Quality of care','Location','Wait time','Availability of services and specialties','Availability of medications in the pharmacy','Ghorelab & Home services'],
+                @include('components.checkboxCard', [
+                    'question' => 'What are the main reasons for your response? Select all that apply.',
+                    'options' => [
+                        'Price',
+                        'Quality of care',
+                        'Location',
+                        'Wait time',
+                        'Availability of services and specialties',
+                        'Availability of medications in the pharmacy',
+                        'Ghorelab & Home services',
+                    ],
                 ])
                 {{-- <div class="review-form">
                     <p class="question mb-2x">What are the main reasons for your response? Select all that apply.</p>
@@ -49,8 +58,8 @@
                     </div>
                 </div> --}}
                 <div class="flex">
-                    <a href="{{route('landing.page')}}" class="btn btn-orange">Prev</a>
-                <a href="{{route('main.form.slide2')}}" class="btn btn-green">Next</a>
+                    <a href="{{ route('pages.final') }}" class="btn btn-primary">Finish</a>
+                    <a href="{{ route('main.form.slide2') }}" class="btn btn-green">Next</a>
                 </div>
             </div>
         </div>
