@@ -12,7 +12,7 @@
                         'Nurse',
                         'Reception Team',
                         'Blood / Sample Collectors',
-                        'X-ray, ETT, ECHO, and/or USG (Technician)',
+                        'X-ray, ETT, ECHO, and/or USG Technician',
                         'Security Team',
                     ],
                 ])
