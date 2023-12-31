@@ -9,7 +9,6 @@
                     <h2 class="form-title mb-1x">Multiple UPI Found!</h2>
                     <p class="form-description">Please select an UPI from which you want to submit the feedback.</p>
                 </div>
-
                 <div class="upi-cards-container">
                     <a href="{{ route('main.form.slide1') }}">
                         <div class="upi-cards">
@@ -17,7 +16,6 @@
                         </div>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
