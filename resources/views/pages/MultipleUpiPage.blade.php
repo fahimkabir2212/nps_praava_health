@@ -5,7 +5,6 @@
             <div class="vh-100 content">
             </div>
             <div class="form-container">
-                <img class="prava-logo" src="{{ asset('assets/images/praava-logo-main.svg') }}" alt="">
                 <div class="form-content">
                     <h2 class="form-title mb-1x">Multiple UPI Found!</h2>
                     <p class="form-description">Please select an UPI from which you want to submit the feedback.</p>
