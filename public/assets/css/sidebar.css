@@ -2,7 +2,6 @@
     background-color: var(--purple);
 }
 
-
 .steps {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
     align-items: flex-start;
     height: 100%;
     gap: 3rem;
-    margin: 0 0 0 25% ;
+    margin: 0 0 0 25%;
 }
 
 .step {
@@ -31,8 +30,8 @@
     background-color: var(--white-grey);
 }
 
-.step-description{
-    color: #bfbfbf;
+.step-description {
+    color: #ffffff8e;
 }
 
 /* ACTIVE STEP */
@@ -42,6 +41,6 @@
     background-color: var(--white) !important;
 }
 
-.color-wh{
+.color-wh {
     color: var(--white) !important;
 }

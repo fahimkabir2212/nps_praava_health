@@ -31,4 +31,6 @@ Route::get('/feedback-form2', function () {
 Route::get('/feedback-form3', function () {
     return view('pages.NpsFormScreen4');
 })->name('main.form.slide4');
-
+Route::get('/final-page', function () {
+    return view('pages.FinalScreen5a');
+})->name('pages.final');

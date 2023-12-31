@@ -46,7 +46,6 @@
 
 /* MAIN FORM */
 
-
 /* FORM */
 .review-form {
     background-color: #ffffff6f;
@@ -86,54 +85,65 @@
     background-color: var(--purple);
 }
 
-.question{
+.question {
     font-size: 1.1rem;
     font-weight: 600;
 }
 
 /* Multiselect */
-.main-response-reason{
+.main-response-reason {
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.select label{
+.select label {
     font-size: 1rem;
     font-weight: 500;
 }
 
 /* TEST */
-.w-100{
+.w-100 {
     width: 100%;
 }
 
 /* screen 3 */
-.form-heading{
+.form-heading {
     color: var(--purple);
 }
 
-.last-screen-selections{
+.last-screen-selections {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
     text-align: left;
 }
 
-.selection{
+.selection {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.selection label{
+.selection label {
     font-size: 1rem;
 }
 
 /* STYLE 2 */
 
-.test{
+.test {
     height: 2rem !important;
+}
+
+/* TEXT AREA */
+.text-box {
+    width: 100%;
+}
+.text-box textarea {
+    min-width: 100%;
+    max-width: 100%;
+    resize: none;
+    border-radius: 6px;
 }

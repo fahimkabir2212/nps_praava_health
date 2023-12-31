@@ -5,21 +5,89 @@
             @include('components.sidebar')
             <div class="form-container">
                 <h5 class="form-heading">What are the main reason(s) for your response? Select all that apply.</h5>
-                @include('components.checkboxCard',[
-                    'question'=>'Contact Center',
-                    'options'=>['Service knowledge',"Providing correct information",'Attitude & professionalism'],
+                @include('components.checkboxCard', [
+                    'question' => 'Contact Center',
+                    'options' => [
+                        'Service knowledge',
+                        'Providing correct information',
+                        'Attitude & professionalism',
+                    ],
                 ])
-                @include('components.checkboxCard',[
-                    'question'=>"Interaction with Praava's social media pages",
-                    'options'=>['Providing correct information',"Maintained a professional tone",'Responded in a timely manner'],
+                @include('components.checkboxCard', [
+                    'question' => "Interaction with Praava's social media pages",
+                    'options' => [
+                        'Providing correct information',
+                        'Maintained a professional tone',
+                        'Responded in a timely manner',
+                    ],
                 ])
-                @include('components.checkboxCard',[
-                    'question'=>'Doctor/Healthcare provider',
-                    'options'=>["Doctor/Healthcare provider's knowledge","Empathy & care",'Doctor/healthcare provider was on time',"Consultation time","Attitude & professionalism "],
+                @include('components.checkboxCard', [
+                    'question' => 'Doctor/Healthcare provider',
+                    'options' => [
+                        "Doctor/Healthcare provider's knowledge",
+                        "Healthcare provider's Empathy & care",
+                        'Doctor/healthcare provider was on time',
+                        'Consultation time',
+                        'Attitude & professionalism ',
+                    ],
+                ])
+                @include('components.checkboxCard', [
+                    'question' => 'Nurse',
+                    'options' => [
+                        'Comfort in vital measurement ',
+                        'Discomfort in vital measurement',
+                        'Vital measurement time/duration',
+                        'Attitude & professionalism',
+                        'Long wait time before vital measurement',
+                        'Short wait time before vital measurement',
+                    ],
+                ])
+                @include('components.checkboxCard', [
+                    'question' => 'Reception Team (Front Desk)',
+                    'options' => [
+                        'Greeting at the door',
+                        'Guidance throughout the facility',
+                        'Attitude & professionalism',
+                        'Long wait time',
+                        'Short wait time',
+                    ],
+                ])
+                @include('components.checkboxCard', [
+                    'question' => 'Blood / Sample Collection (Phlebotomist)',
+                    'options' => [
+                        'Comfort in blood collection process',
+                        'Discomfort in blood collection process',
+                        'Comfort during other sample collection',
+                        'Discomfort during other sample collection',
+                        'Time taken to draw blood',
+                        'Attitude & professionalism',
+                        'Long wait time',
+                        'Short wait time',
+                    ],
+                ])
+                @include('components.checkboxCard', [
+                    'question' => 'X-ray, ETT, ECHO, USG (Technician)',
+                    'options' => [
+                        'Comfortable process',
+                        'Discomfort in process',
+                        'Process time/duration ',
+                        'Service environment ',
+                        'Attitude & professionalism',
+                        'Long wait time',
+                        'Short wait time',
+                    ],
+                ])
+                @include('components.checkboxCard', [
+                    'question' => 'Security Team',
+                    'options' => [
+                        'Assistance with vehicle and parking',
+                        'Greeting at the entrance',
+                        'Attitude & professionalism',
+                    ],
                 ])
                 <div class="flex">
-                    <a href="{{ route('main.form.slide1') }}" class="btn btn-orange">Prev</a>
-                    <a href="{{ route('main.form.slide2') }}" class="btn btn-green">Next</a>
+                    <a href="{{ route('main.form.slide2') }}" class="btn btn-orange">Prev</a>
+                    <a href="{{ route('main.form.slide4') }}" class="btn btn-green">Next</a>
                 </div>
             </div>
         </div>
