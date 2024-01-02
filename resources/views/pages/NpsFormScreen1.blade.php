@@ -13,8 +13,9 @@
                     'question' => 'What are the main reasons for your response? Select all that apply.',
                     'options' => [
                         'Price',
-                        'Quality of care',
                         'Location',
+                        'Environment',
+                        'Quality of care',
                         'Wait time',
                         'Availability of services and specialties',
                         'Availability of medications in the pharmacy',
