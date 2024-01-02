@@ -111,14 +111,30 @@
 /* Multiselect */
 .main-response-reason {
     text-align: left;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* MIGHT BE CHANGED LATER */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 0.5rem;
 }
 
 .select label {
     font-size: 1rem;
     font-weight: 500;
+}
+.select input {
+    display: none;
+}
+/* FOR LABEL BORDER */
+.select label {
+    border: 2px solid var(--purple);
+    border-radius: 6px;
+    transition: all 5ms ease-in-out;
+}
+.select input:checked + label {
+    background-color: var(--purple);
+    color: var(--white);
 }
 
 /* TEST */
