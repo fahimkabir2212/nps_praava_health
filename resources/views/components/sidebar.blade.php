@@ -39,16 +39,3 @@
     </div>
 
 </section>
-
-{{-- <div class="vh-100 form-steps sticky">
-    <div class="steps">
-        @for ($i = 1; $i <= 4; $i++)
-            <div class="step">
-                <a href="{{ route('main.form.slide' . $i) }}">
-                    <h3 class="{{ request()->routeIs('main.form.slide' . $i) ? 'active-step' : '' }}">{{ $i }}</h3>
-                </a>
-                <p>STEP</p>
-            </div>
-        @endfor
-    </div>
-</div> --}}
