@@ -23,7 +23,7 @@
                     ],
                 ])
                 <div class="flex">
-                    <a href="{{ route('pages.final') }}" class="btn btn-primary">Finish</a>
+                    {{-- <a href="{{ route('pages.final') }}" class="btn btn-primary">Finish</a> --}}
                     <a href="{{ route('main.form.slide2') }}" class="btn btn-green">Next</a>
                 </div>
             </div>
