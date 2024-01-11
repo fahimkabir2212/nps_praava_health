@@ -15,6 +15,7 @@
                         'X-ray, ETT, ECHO, and/or USG Technician',
                         'Security Team',
                     ],
+                    'componentId' => 1,
                 ])
                 @include('components.reviewScale', [
                     'question' =>

@@ -1,16 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
+// JavaScript for the component
+document.addEventListener("DOMContentLoaded", function () {
     // Listen for checkbox changes
-    for (let i = 1; i <= 7; i++) {
-        let checkbox = document.getElementById('item_' + i);
-        checkbox.addEventListener('change', function() {
-            updateBlockVisibility(checkbox, 'item-' + i);
+    let checkboxes = document.querySelectorAll(".checkbox-item");
+
+    checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function () {
+            updateBlockVisibility(checkbox);
         });
-    }
+    });
 
     // Function to update the visibility of a block based on the checkbox state
-    function updateBlockVisibility(checkbox, blockId) {
-        let item = document.getElementById(blockId);
+    function updateBlockVisibility(checkbox) {
+        let componentId = checkbox.closest(".main-response-reason").dataset
+            .componentId;
+        let item = document.querySelector(
+            `[data-component-id="${componentId}"]`
+        );
+
         // Show or hide the block based on whether the checkbox is checked
-        item.style.display = checkbox.checked ? 'block' : 'none';
+        item.style.display = checkbox.checked ? "flex" : "none";
     }
 });

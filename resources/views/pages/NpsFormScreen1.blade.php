@@ -21,6 +21,7 @@
                         'Availability of medications in the pharmacy',
                         'Ghorelab & Home services',
                     ],
+                    'componentId' => 1,
                 ])
                 <div class="flex">
                     {{-- <a href="{{ route('pages.final') }}" class="btn btn-primary">Finish</a> --}}

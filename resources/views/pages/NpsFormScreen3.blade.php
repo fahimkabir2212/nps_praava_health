@@ -12,6 +12,7 @@
                         'Providing correct information',
                         'Attitude & professionalism',
                     ],
+                    'componentId' => 1,
                 ])
                 @include('components.checkboxCard', [
                     'question' => "Interaction with Praava's social media pages",
@@ -20,6 +21,7 @@
                         'Maintained a professional tone',
                         'Responded in a timely manner',
                     ],
+                    'componentId' => 2,
                 ])
                 @include('components.checkboxCard', [
                     'question' => 'Doctor/Healthcare provider',
@@ -30,6 +32,7 @@
                         'Consultation time',
                         'Attitude & professionalism ',
                     ],
+                    'componentId' => 3,
                 ])
                 @include('components.checkboxCard', [
                     'question' => 'Nurse',
@@ -41,6 +44,7 @@
                         'Long wait time before vital measurement',
                         'Short wait time before vital measurement',
                     ],
+                    'componentId' => 4,
                 ])
                 @include('components.checkboxCard', [
                     'question' => 'Reception Team (Front Desk)',
@@ -51,6 +55,7 @@
                         'Long wait time',
                         'Short wait time',
                     ],
+                    'componentId' => 5,
                 ])
                 @include('components.checkboxCard', [
                     'question' => 'Blood / Sample Collection (Phlebotomist)',
@@ -64,6 +69,7 @@
                         'Long wait time',
                         'Short wait time',
                     ],
+                    'componentId' => 6,
                 ])
                 @include('components.checkboxCard', [
                     'question' => 'X-ray, ETT, ECHO, USG (Technician)',
@@ -76,6 +82,7 @@
                         'Long wait time',
                         'Short wait time',
                     ],
+                    'componentId' => 7,
                 ])
                 @include('components.checkboxCard', [
                     'question' => 'Security Team',
@@ -84,6 +91,7 @@
                         'Greeting at the entrance',
                         'Attitude & professionalism',
                     ],
+                    'componentId' => 8,
                 ])
                 <div class="flex">
                     <a href="{{ route('main.form.slide2') }}" class="btn btn-orange">Prev</a>
