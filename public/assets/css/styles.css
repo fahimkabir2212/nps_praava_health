@@ -10,7 +10,24 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.landing-form-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    background-color: var(--white);
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
 .form-container {
     text-align: center;
     display: flex;
@@ -19,6 +36,12 @@
     justify-content: center;
     gap: 2rem;
     padding: 1rem 2rem;
+}
+
+.landing-page {
+    background: linear-gradient(0deg, #000000b3, #000000b3),
+        url(../images/praava-front.jpg);
+    min-height: 100vh;
 }
 
 .prava-logo {
@@ -210,4 +233,12 @@
 .upi-card p {
     color: var(--black);
     font-size: 0.8rem;
+}
+
+@media screen and (max-width: 450px) {
+    .landing-form-container {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+    }
 }
