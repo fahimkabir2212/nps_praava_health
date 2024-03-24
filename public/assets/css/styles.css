@@ -107,6 +107,7 @@
 .rating-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .rating-item {
@@ -119,7 +120,7 @@
 }
 .rating-item label img {
     width: 50px;
-    transition: all 0.2s ease-in;
+    transition: all 1s ease-in;
     cursor: pointer;
 }
 /* .rating-item label {
