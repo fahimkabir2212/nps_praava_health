@@ -5,12 +5,14 @@
     --purple: #8a1e61;
     --purple-light: #8a206133;
     --purple-hover: #74134e;
-    --white: #ebebeb;
-    --white-grey: #c8c8c881;
+    --white: #f8f8f8;
+    --white-grey: #acacac;
     --grey: #939393;
     --yellow: #ffa800;
     --green: #008000b9;
     --green-hover: #008000cf;
+    --transparent-purple: #c963ac;
+    --transparent-white: #c592b2;
 }
 
 * {
@@ -24,6 +26,10 @@ body {
     font-size: 10px;
     color: var(--black);
     background-color: var(--white);
+}
+/* BORDER RAD */
+.b-rad {
+    border-radius: 10px 10px 10px 10px;
 }
 
 h1 {
@@ -42,12 +48,12 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 h5 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 h6 {
     font-size: 1rem;
@@ -62,10 +68,10 @@ p {
 .btn {
     display: inline-block;
     border: none;
-    padding: 0.7rem 1.2rem;
-    font-size: 1rem;
+    padding: 0.5rem 2.5rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 15px;
     text-decoration: none;
 }
 
@@ -73,6 +79,15 @@ p {
 .btn-primary {
     background-color: var(--purple);
     color: var(--white);
+    transition: all 5ms ease-in-out;
+}
+.btn-primary:hover {
+    background-color: var(--purple-hover);
+}
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--purple);
+    border: 1.5px solid var(--purple);
     transition: all 5ms ease-in-out;
 }
 .btn-primary:hover {

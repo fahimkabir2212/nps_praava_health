@@ -17,28 +17,62 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    align-items: baseline;
     /* margin: 0 auto; */
+}
+
+.step p {
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 .step a {
     text-decoration: none;
 }
-.step a h3 {
-    font-size: 2rem;
-    color: var(--purple);
-    padding: 0.5rem 1rem;
-    border-radius: 5rem;
-    background-color: var(--white-grey);
-}
 
 .step-description {
-    color: #ffffff8e;
+    color: #fff;
+}
+/* NEXT STEP */
+.next-step {
+    font-size: 0.6rem;
+    color: var(--transparent-purple);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    background-color: var(--transparent-purple);
+    border: 4px solid var(--transparent-purple);
+    outline: none;
 }
 
+/* COMPLETED STEP */
+.completed-step {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    color: white !important;
+    border-radius: 5rem;
+    background-color: #5ebf8a;
+    border: 4px solid #5ebf8a;
+    outline: none;
+}
 /* ACTIVE STEP */
 .active-step {
-    padding: 0.5rem 1rem;
-    border-radius: 5rem;
-    background-color: var(--white) !important;
+    font-size: 0.6rem;
+    color: var(--white);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 4px solid var(--purple);
+    outline: 1px solid white;
+}
+
+.active-p {
+    color: var(--transparent-purple);
+}
+.complete-p {
+    color: var(--white);
+}
+.next-p {
+    color: var(--transparent-white) !important;
 }
 
 .color-wh {

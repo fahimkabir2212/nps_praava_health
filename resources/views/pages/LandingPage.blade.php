@@ -22,7 +22,9 @@
                             <p>Phone Number</p>
                             <input type="text" placeholder="Search by phone number " value="+880">
                         </div>
-                        <a href="{{ route('main.form.slide1') }}" class="btn btn-primary">Start</a>
+                        <div>
+                            <a href="{{ route('main.form.slide1') }}" class="btn btn-primary">Start</a>
+                        </div>
                     </form>
                 </div>
             </div>
