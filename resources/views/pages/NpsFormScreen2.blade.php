@@ -9,44 +9,44 @@
                         <a href="{{ route('main.form.slide1') }}">
                             <h3 class="completed-step">✓</h3>
                         </a>
-                        <div class="step-description">
+                        <a href="{{ route('main.form.slide1') }}" class="step-description">
                             <h5>STEP 1</h5>
                             <h4>Overall Feedback</h4>
                             <p>Completed</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="step">
                         <a href="{{ route('main.form.slide2') }}">
                             <h3 class="active-step">✓</h3>
                         </a>
-                        <div class="step-description">
+                        <a href="{{ route('main.form.slide2') }}" class="step-description">
                             <h5>STEP 2</h5>
                             <h4>Individual Feedback
                             </h4>
                             <p class="active-p">In Progress</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="step">
                         <a href="{{ route('main.form.slide3') }}">
                             <h3 class="next-step">✓</h3>
                         </a>
-                        <div class="step-description">
+                        <a href="{{ route('main.form.slide3') }}" class="step-description">
                             <h5>STEP 3</h5>
                             <h4>Main Feedback
                                 Reason</h4>
                             <p class="next-p">Pending</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="step">
                         <a href="{{ route('main.form.slide4') }}">
                             <h3 class="next-step">✓</h3>
                         </a>
-                        <div class="step-description">
+                        <a href="{{ route('main.form.slide4') }}" class="step-description">
                             <h5>STEP 4</h5>
                             <h4>Comments
                             </h4>
                             <p class="next-p">Pending</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
