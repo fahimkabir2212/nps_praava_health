@@ -2,7 +2,7 @@
 @section('content')
     <section class="section-landing-page">
         <div class="grid grid-col-4x-8x">
-            <div class="vh-100 content">
+            <div class="vh-100 content image-container-final">
             </div>
             <div class="form-container">
                 <img class="prava-logo" src="{{ asset('assets/images/praava-logo-main.svg') }}" alt="">

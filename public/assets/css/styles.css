@@ -246,10 +246,31 @@
 }
 
 @media screen and (max-width: 450px) {
+    .grid-col-4x-8x {
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
     .landing-form-container {
         width: 100%;
         min-height: 100vh;
         border-radius: 0;
+    }
+    .form-steps {
+        display: none;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .image-container-final {
+        display: none;
+    }
+    .rating-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .select label {
+        font-size: 10px;
     }
 }
 
